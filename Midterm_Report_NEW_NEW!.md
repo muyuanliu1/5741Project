@@ -9,7 +9,7 @@
 
 While car accidents cause safety issues for citizens, this project aims to focus on the economic impacts; in other words, we want to ***predict accidents’ impact on the traffic***. Our data set consists of ***47 features and 1,516,064 data records***. Each record represents a car accident in the US during 2016 to 2020. The variable of interest is ‘accident severity’ (on the traffic), which has been previously encoded from 1 to 4 with 4 being the most severe. The independent variables mainly contain ***4 aspects***, including locations, timings, weathers, and traffic conditions. They also have ***3 major data types***: continuous values (int/float), categorical(object/bool), text (object) shown in TABLE 1.
 
-![](Table111.jpeg)
+![](Table1.jpeg)
 
 Table 1 shows all features with missing values and percentage of missing. 19 out of 47 features contain missing values and the majority is missing less than 10%. We divided these features into 4 types and treated them differently. ***First***, the top 3 features are missing far too many values, 60% and 30% (compared to less than 10% missing in other features). Imputation would be less accurate and affect data integrity, so we decided to drop them. ***Second***, the last 8 features only miss less than 5000 entries (<0.5%), so we simply dropped the missing rows. ***Third***, the rest of the features are missing about 1% each and are all weather features. We will impute them with data in the same county during the same 2-week period. ***Categorical*** features such as ‘weather_condition’ will be imputed by the most common category in that period and ***real-value*** features will be imputed by the median of the period. 
 
@@ -49,7 +49,7 @@ From TABLE 4 we observed that compared to other seasons, ***winter has more acci
 
 We ***first applied 3 methods*** to improve model fit. We implemented ***one-hot encoding*** to convert categorical features into binary ones, obtaining 27 features. We then ***scaled and standardized*** the data. And last, we split the data into ***training and testing data*** set by an 8-2 ratio. 
 
-![](Table7.png)
+![](table7.png)
 
 In fitting a logistic regression model, we used a grid search to find the best hyperparameters and regularization method. The best model used L2 regularization and had an ***overall accuracy of 0.72***. From TABLE 7, we see that training and testing errors are similar, and that the error metrics give similar results, suggesting that we managed to ***avoid overfitting.*** However, we think the accuracy is not high enough for us to gain insights from this model (e.g., interpreting p-values). We aim to ***further improve model performances*** in the next steps. 
 
