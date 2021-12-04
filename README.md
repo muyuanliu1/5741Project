@@ -1,5 +1,10 @@
 # Predicting Accidents Severity
 5741 Project by Muyuan Liu and Duanduan Zhu
+
+## Project Presentation (Updated Dec.3, 2021)
+[Video Link](https://youtu.be/nkIJ3IapUY4)
+
+
 ## 1. Problem and Objective: 
     Our team aims to predict car accident severity based on the contributing factors, so that traffic safety authorities can achieve faster accident resolution and limit economic loss.
 ## 2. Data: 
@@ -8,5 +13,3 @@
     Sufficient observations and dimensions allow in-depth EDA, feature engineerng, and accurate training and testing.
     
     
-# Project Presentation
-[Video Link](https://youtu.be/nkIJ3IapUY4)
