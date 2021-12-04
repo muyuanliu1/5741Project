@@ -6,3 +6,7 @@
     https://smoosavi.org/datasets/us_accidents traffic accident data: 3 million x 47 features
 ## 3. Why is the dataset useful?: 
     Sufficient observations and dimensions allow in-depth EDA, feature engineerng, and accurate training and testing.
+    
+    
+# Project Presentation
+    https://youtu.be/nkIJ3IapUY4
